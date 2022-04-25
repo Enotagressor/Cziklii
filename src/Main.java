@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        task3();
+        task4();
     }
 
     public static void task1() {
@@ -16,6 +16,7 @@ public class Main {
                 System.out.print(i + " ");
             }
         }
+
 
     public static void task2(){
         int f = 6;
@@ -37,6 +38,19 @@ public class Main {
             }
         }
 
+    }
+    //zadanie 3, 2 variant
+    public static void task4() {
+        int year = 2022;
+        int startPeriod = 200;
+        int endPeriod = 100;
+        int povtorPrilet = 79;
+
+        for (int yearKomet = year - startPeriod; yearKomet <= (year + endPeriod); yearKomet++) {
+            if (yearKomet % povtorPrilet ==0) {
+                System.out.println(yearKomet);
+            }
+        }
     }
 }
 
